@@ -113,7 +113,7 @@ dtedit <- function(input, output, name, thedata, id,
 				   callback.update = function(data, olddata, row) { },
 				   callback.insert = function(data, row) { },
 				   click.time.threshold = 2, # in seconds
-				   datatable.options = list(pageLength=defaultPageLength)
+				   datatable.options = list(paging = F, searching = T, pageLength = defaultPageLength)
 ) {
 	# Some basic parameter checking
 	if(!is.data.frame(thedata) | ncol(thedata) < 1) {
